@@ -1,8 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:yxy" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="5f17954d-bee9-4ab0-842d-b7f978f5b503" name="默认更改列表" comment="">
-      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/reload.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/reload.min.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,7 +51,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../BitcoinConnection" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../DataCertProject" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -59,26 +84,50 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="yxy" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="496" y="129" key="FileChooserDialogImpl" timestamp="1608463904697">
+    <state x="496" y="129" key="FileChooserDialogImpl" timestamp="1608530550268">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="496" y="129" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1608463904697" />
-    <state width="1092" height="208" key="GridCell.Tab.0.bottom" timestamp="1608514833562">
+    <state x="496" y="129" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1608530550268" />
+    <state width="1092" height="208" key="GridCell.Tab.0.bottom" timestamp="1608516564376">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1092" height="208" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1608514833562" />
-    <state width="1092" height="208" key="GridCell.Tab.0.center" timestamp="1608514833562">
+    <state width="1092" height="208" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1608516564376" />
+    <state width="1092" height="208" key="GridCell.Tab.0.center" timestamp="1608516564376">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1092" height="208" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1608514833562" />
-    <state width="1092" height="208" key="GridCell.Tab.0.left" timestamp="1608514833562">
+    <state width="1092" height="208" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1608516564376" />
+    <state width="1092" height="208" key="GridCell.Tab.0.left" timestamp="1608516564376">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1092" height="208" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1608514833562" />
-    <state width="1092" height="208" key="GridCell.Tab.0.right" timestamp="1608514833562">
+    <state width="1092" height="208" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1608516564376" />
+    <state width="1092" height="208" key="GridCell.Tab.0.right" timestamp="1608516564376">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1092" height="208" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1608514833562" />
+    <state width="1092" height="208" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1608516564376" />
   </component>
 </project>
