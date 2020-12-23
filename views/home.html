@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        #hide {
+            display: none;
+        }
+
+    </style>
+    <script>
+        window.onload = function () {
+            document.getElementById("show").onclick = function () {
+                document.getElementById("hide").style.display = "block";
+            }
+
+        }
+    </script>
+</head>
+<body>
+        <button id="show">最新区块的hash</button>
+        <div id="hide">最新区块的hash:{{.BestHash}}</div>
+</body>
+</html>
