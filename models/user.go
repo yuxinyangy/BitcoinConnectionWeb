@@ -41,9 +41,9 @@ func (u User) QueryUser() (*User, error) {
 		md5Hash.Write([]byte(u.Password))
 		passwordBytes := md5Hash.Sum(nil)
 		u.Password = hex.EncodeToString(passwordBytes)
-		row := db_mysql.Db.QueryRow("select from user where phone = ? and password = ? ",
-			u.Phone, u.Password, )
-		err := row.Scan(&u.Phone, &u.Password)
+		row := db_mysql.Db.QueryRow("select phone from user where phone = ? and password = ? ",
+			u.Phone, u.Password)
+		err := row.Scan(&u.Phone)
 		if err != nil {
 			return nil, err
 		}
