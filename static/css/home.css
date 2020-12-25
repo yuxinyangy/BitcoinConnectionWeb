@@ -1,45 +1,105 @@
-body{
-    background-image:url(../img/12.jpg) ;
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
 }
 
-#login_box{
-    background-color: #00000068;
-    border-radius: 13px;
+
+.sidebar{
+    position: fixed;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-image: linear-gradient(to top, #ffd1ff 0%, #fad0c4 100%);
+    transition: all .5s ease;
+}
+
+.sidebar header{
+    font-size: 22px;
+    color: black;
     text-align: center;
-    margin: 0px auto;
-    margin-top: 100px;
-    width: 350px;
-    height: 400px;
-
+    line-height: 70px;
+    background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
+    user-select: none;
 }
 
-#login_box h1{
-    padding-top: 60px;
-    color: #ffffffff;
+.sidebar ul a{
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: 20px;
+    color: black;
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(255,255,255,.1);
+    border-bottom: 1px solid white;
+    translation: .4s;
 }
 
-#login_box .input_box{
-    margin-top: 15px;
+ul li:hover a{
+    padding-left: 50px;
 }
 
-#login_box .input_box input{
-   border: none;
-   background: none;
-   border-bottom: #ffffffff 2px solid;
-   padding:5px 10px;
-   outline: none;
-   color: #ffffffff;
-}
-#login_box .loginButton{
-    margin-top: 30px;
-    width: 130px;
-    border-radius: 13px;
-    outline: none;
-    border: none;
-    height: 25px;
-    border: 0;
-    background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
-    color: #ffffffff;
-    
+.sidebar ul a i{
+    margin-right: 16px;
 }
 
+
+#check{
+    display: none;
+}
+
+label #btn,label #cancel{
+    position: absolute;
+    cursor: pointer;
+    background-image: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+    border-radius: 3px;
+}
+
+label #btn{
+    left: 40px;
+    top: 25px;
+    font-size: 35px;
+    color: white;
+    padding: 6px 12px;
+    transition: all .5s;
+}
+
+label #cancel{
+    z-index: 1111;
+    left: -195px;
+    top: 17px;
+    font-size:30px;
+    color: #0a5275;
+    padding: 4px 9px;
+    transition: all .5s ease;
+}
+
+#check:checked ~ .sidebar{
+    left: 0;
+}
+
+#check:checked ~ label #btn{
+    left: 250px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#check:checked ~ label #cancel{
+    left: 195px;
+}
+
+#check:checked ~ section{
+    margin-left: 250px;
+}
+
+section{
+    background: url(../img/12.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    transition: all .5s;
+}
