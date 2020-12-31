@@ -3,23 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <style type="text/css">
-        #hide {
-            display: none;
-        }
-
-    </style>
-    <script>
-        window.onload = function () {
-            document.getElementById("show").onclick = function () {
-                document.getElementById("hide").style.display = "block";
-            }
-
-        }
-    </script>
 </head>
-<body>
-        <button id="show">最新区块的hash</button>
-        <div id="hide">最新区块的hash:{{.BestHash}}</div>
-</body>
+<frameset cols="15%,85%">
+    <frame noresize src="lefthome.html">
+    <frame noresize name="lefthome">
+</frameset>
 </html>

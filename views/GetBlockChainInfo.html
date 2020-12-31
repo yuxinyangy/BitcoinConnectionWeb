@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>区块链名称:{{.BlockChainInfo.Chain}}</h2>
+<h2>已验证区块数量:{{.BlockChainInfo.Blocks}}</h2>
+<h2>已验证区块头数量:{{.BlockChainInfo.Headers}}</h2>
+<h2>最高区块的哈希:{{.BlockChainInfo.Bestblockhash}}</h2>
+<h2>区块难度:{{.BlockChainInfo.Difficulty}}</h2>
+<h2>最近区块之前的11个区块的中位时间:{{.BlockChainInfo.Mediantime}}</h2>
+<h2>验证进度的估计值:{{.BlockChainInfo.Verificationprogress}}</h2>
+<h2>活跃的链上的总工作量:{{.BlockChainInfo.Chainwork}}</h2>
+<h2>区块是否处于修剪中:{{.BlockChainInfo.Pruned}}</h2>
+<h2>有效的最高的区块:{{.BlockChainInfo.Pruneheight}}</h2>
+</body>
+</html>

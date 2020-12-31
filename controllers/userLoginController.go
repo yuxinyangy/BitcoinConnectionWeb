@@ -1,7 +1,6 @@
 package controllers
 
 import (
-	"BitcoinConnectionWeb/getbitcion"
 	"BitcoinConnectionWeb/models"
 	"fmt"
 	"github.com/astaxie/beego"
@@ -26,7 +25,6 @@ func (l *LoginController) Post() {
 		return
 	}
 	//登入成功,跳转项目核心功能页面(home.html)
-	l.Data["BestHash"] = getbitcion.GetMemoryInfo()
 	l.TplName = "home.html"
 
 }

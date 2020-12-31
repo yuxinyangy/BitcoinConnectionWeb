@@ -7,26 +7,26 @@ import (
 	"fmt"
 )
 //1、最新区块的hash
-func GetBestBlockHash() interface{} {
+func GetBestBlockHash() string{
 	reqBytes := JsonString(GETBESTBLOCKHASH, RPCVERSION,nil)
 	body := DoPost(RPCURL,reqBytes)
 	RPCResult := utils.GetResult(body)
-	return RPCResult.Result
+	return RPCResult.Result.(string)
 }
 
 //2、获取指定区块的hash
-func GetBlockHash(height int) interface{} {
+func GetBlockHash(height int) string {
 	reqBytes := JsonString(GETBLOCKHASH, RPCVERSION,[]interface{}{height})
 	body := DoPost(RPCURL,reqBytes)
 	RPCResult := utils.GetResult(body)
-	return RPCResult.Result
+	return RPCResult.Result.(string)
 }
 //3、获取区块的总数
-func GetBlockCount() interface{} {
+func GetBlockCount() float64 {
 	reqBytes := JsonString(GETBLOCKCOUNT, RPCVERSION,nil)
 	body := DoPost(RPCURL,reqBytes)
 	RPCResult := utils.GetResult(body)
-	return RPCResult.Result
+	return RPCResult.Result.(float64)
 }
 
 //4、获取当前节点所在链的信息
@@ -66,11 +66,11 @@ func GetBlock(hashcode string) *entity.Block {
 }
 
 //6、生成一个新的比特币的地址
-func GetNewAddress(label string,str string) interface{} {
+func GetNewAddress(label string,str string) string {
 	reqBytes := JsonString(GETNEWADDRESS, RPCVERSION,[]interface{}{label,str})
 	body := DoPost(RPCURL,reqBytes)
 	RPCResult := utils.GetResult(body)
-	return RPCResult.Result
+	return RPCResult.Result.(string)
 }
 
 //7、获取指定哈希区块头
@@ -92,11 +92,11 @@ func GetBlockHeader(hashcode string) *entity.BlockHeader {
 }
 
 //8、获取区块难度
-func GetDifficulty() interface{} {
+func GetDifficulty() float64 {
 	reqBytes := JsonString(GETDIFFICULT, RPCVERSION,nil)
 	body := DoPost(RPCURL,reqBytes)
 	RPCResult := utils.GetResult(body)
-	return RPCResult.Result
+	return RPCResult.Result.(float64)
 }
 
 //9、获取交易池信息
@@ -136,11 +136,11 @@ func GetTxOutSetInfo() *entity.TxOutSetInfo {
 }
 
 //11、校验本地区块
-func VerifyChain() interface{} {
+func VerifyChain() bool {
 	reqBytes := JsonString(VERIFYCHAIN, RPCVERSION,nil)
 	body := DoPost(RPCURL,reqBytes)
 	RPCResult := utils.GetResult(body)
-	return RPCResult.Result
+	return RPCResult.Result.(bool)
 }
 
 //12、获取RPC服务器信息
@@ -162,11 +162,11 @@ func GetRpcInfo() *entity.RpcInfo {
 }
 
 //13、获取正常运行时间(秒)
-func UpTime() interface{} {
+func UpTime() float64 {
 	reqBytes := JsonString(UPTIME, RPCVERSION,nil)
 	body := DoPost(RPCURL,reqBytes)
 	RPCResult := utils.GetResult(body)
-	return RPCResult.Result
+	return RPCResult.Result.(float64)
 }
 
 //14、获取挖矿信息
@@ -188,11 +188,11 @@ func GetMiningInfo() *entity.MiningInfo {
 }
 
 //15、获取全网哈希生成速率
-func GetNetworkHashPS(nBlocks int, height int) interface{} {
+func GetNetworkHashPS(nBlocks int, height int) float64 {
 	reqBytes := JsonString(GETNETWORKHASHPS, RPCVERSION,[]interface{}{nBlocks,height})
 	body := DoPost(RPCURL,reqBytes)
 	RPCResult := utils.GetResult(body)
-	return RPCResult.Result
+	return RPCResult.Result.(float64)
 }
 
 //16、获取内存利用信息
@@ -214,7 +214,7 @@ func GetMemoryInfo() *entity.MemoryInfo {
 }
 
 //17、验证地址有效性
-func VaLiDateAddress(address interface{}) *entity.DateAddress {
+func VaLiDateAddress(address string) *entity.DateAddress {
 	reqBytes := JsonString(VALIDATEADDRESS, RPCVERSION,[]interface{}{address})
 	body := DoPost(RPCURL,reqBytes)
 	RPCResult := utils.GetResult(body)

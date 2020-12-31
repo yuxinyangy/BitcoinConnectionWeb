@@ -35,5 +35,5 @@ const VALIDATEADDRESS = "validateaddress"
  */
 const LEGACY = "legacy"
 const P2SH_SEGWIT = "p2sh-segwit"
-const BECH32 = "bench32"
+const BECH32 = "bech32"
 const N_Block = -1

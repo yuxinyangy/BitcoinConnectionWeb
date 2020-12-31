@@ -2,7 +2,6 @@ package controllers
 
 import (
 	"BitcoinConnectionWeb/models"
-	"fmt"
 	"github.com/astaxie/beego"
 )
 
@@ -26,7 +25,6 @@ func (r *RegisterController) Post() {
 
 	//3.返回前端结果(成功跳登录页面，失败弹出错误信息)
 	if err != nil {
-		fmt.Println(err.Error())
 		r.TplName = "error.html"
 		return
 	}
