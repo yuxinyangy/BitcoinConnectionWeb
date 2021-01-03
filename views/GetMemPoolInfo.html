@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="./css/right.css"/>
+</head>
+<body>
+<h2>当前的交易数:{{.MemPoolInfo.Size}}</h2>
+<h2>全部交易的总大小:{{.MemPoolInfo.Bytes}}</h2>
+<h2>内存池的总内存用量:{{.MemPoolInfo.Usage}}</h2>
+<h2>内存池的最大内存用量:{{.MemPoolInfo.Maxmempool}}</h2>
+<h2>交易被接受的最低费用:{{.MemPoolInfo.Mempoolminfee}}</h2>
+</body>
+</html>

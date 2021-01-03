@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="./css/right.css"/>
+</head>
+<body>
+<h2>区块hash:{{.BlockHeader.Hash}}</h2>
+<h2>确认数:{{.BlockHeader.Confirmations}}</h2>
+<h2>区块高度:{{.BlockHeader.Height}}</h2>
+<h2>区块版本:{{.BlockHeader.Version}}</h2>
+<h2>默克尔树根:{{.BlockHeader.Merkleroot}}</h2>
+<h2>从格林尼治时间（1970-01-01 00:00:00）开始以秒为单位的区块时间:{{.BlockHeader.Time}}</h2>
+<h2>从格林尼治时间（1970-01-01 00:00:00）开始以秒为单位的中间区块时间:{{.BlockHeader.Mediantime}}</h2>
+<h2>随机数:{{.BlockHeader.Nonce}}</h2>
+<h2>难度对应值:{{.BlockHeader.Bits}}</h2>
+<h2>难度:{{.BlockHeader.Difficulty}}</h2>
+<h2>预计产生该区块上链需要的哈希次数:{{.BlockHeader.Chainwork}}</h2>
+<h2>上一个区块的哈希:{{.Previousblockhash}}</h2>
+<h2>下一个区块的哈希:{{.Nextblockhash}}</h2>
+</body>
+</html>

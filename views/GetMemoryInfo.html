@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="./css/right.css"/>
+</head>
+<body>
+<h2>已使用字节数:{{.MemoryInfo.Locked.Used}}</h2>
+<h2>空闲字节数:{{.MemoryInfo.Locked.Free}}</h2>
+<h2>全部字节数:{{.MemoryInfo.Locked.ToTal}}</h2>
+<h2>成功锁定字节数:{{.MemoryInfo.Locked.Locked}}</h2>
+<h2>已分配内存块:{{.MemoryInfo.Locked.Chunks_used}}</h2>
+<h2>空闲内存块:{{.MemoryInfo.Locked.Chunks_free}}</h2>
+</body>
+</html>
