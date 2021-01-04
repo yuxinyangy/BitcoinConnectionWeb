@@ -2,17 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>GetNewAddressParameter</title>
+    <link rel="stylesheet" type="text/css" href="./css/right.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/waifu.css"/>
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
 <form method="post" action="/label_address">
-标签:<input type="text" name="label"/>
-类型:<select name="type">
-    <option value ="legacy" >legacy</option>
-    <option value ="p2sh-segwit">p2sh-segwit</option>
-    <option value="bech32">bech32</option>
-</select>
-<input type="submit" value="查询" />
+    <font>标签:</font><input type="text" name="label"/>
+    <font>类型:</font><select name="type" class="select">
+        <option value ="legacy" >legacy</option>
+        <option value ="p2sh-segwit">p2sh-segwit</option>
+        <option value="bech32">bech32</option>
+    </select>
+    <input type="submit" value="查询" class="button"/>
 </form>
+<div class="waifu">
+    <div class="waifu-tips"></div>
+    <canvas id="live2d" width="280" height="250" class="live2d"></canvas>
+    <div class="waifu-tool">
+        <span class="fui-user"></span>
+    </div>
+</div>
+
+<script src="./assets/waifu-tips.js"></script>
+<script src="./assets/live2d.js"></script>
+<script type="text/javascript">initModel("assets/")</script>
 </body>
 </html>

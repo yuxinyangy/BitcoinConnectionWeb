@@ -2,7 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>GetMemPoolInfo</title>
+    <link rel="stylesheet" type="text/css" href="./css/right.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/waifu.css"/>
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
 <h2>当前的交易数:{{.MemPoolInfo.Size}}</h2>
@@ -10,5 +13,16 @@
 <h2>内存池的总内存用量:{{.MemPoolInfo.Usage}}</h2>
 <h2>内存池的最大内存用量:{{.MemPoolInfo.Maxmempool}}</h2>
 <h2>交易被接受的最低费用:{{.MemPoolInfo.Mempoolminfee}}</h2>
+<div class="waifu">
+    <div class="waifu-tips"></div>
+    <canvas id="live2d" width="280" height="250" class="live2d"></canvas>
+    <div class="waifu-tool">
+        <span class="fui-user"></span>
+    </div>
+</div>
+
+<script src="./assets/waifu-tips.js"></script>
+<script src="./assets/live2d.js"></script>
+<script type="text/javascript">initModel("assets/")</script>
 </body>
 </html>

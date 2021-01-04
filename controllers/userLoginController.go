@@ -10,6 +10,10 @@ type LoginController struct {
 	beego.Controller
 }
 
+func (l *LoginController) Get()  {
+	l.TplName="login.html"
+}
+
 func (l *LoginController) Post() {
 	var user models.User
 	err := l.ParseForm(&user)

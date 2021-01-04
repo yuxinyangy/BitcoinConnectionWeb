@@ -16,7 +16,10 @@ func init() {
 	beego.Router("/user_login", &controllers.LoginController{})
     //读取左侧菜单栏
     beego.Router("lefthome.html",&controllers.LeftHomeController{})
-
+    //右侧
+    beego.Router("righthome.html",&controllers.RightHomeController{})
+    //直接登入
+    beego.Router("login.html",&controllers.LoginController{})
 
     //查询最新区块的hash
     beego.Router("GetBestBlockHash.html",&controllers.GetBestBlockHashController{})

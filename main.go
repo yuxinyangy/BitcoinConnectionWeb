@@ -11,6 +11,7 @@ func main() {
 	beego.SetStaticPath("/js", "./static/js")
 	beego.SetStaticPath("/img", "./static/img")
 	beego.SetStaticPath("/css", "./static/css")
+	beego.SetStaticPath("/assets","./static/assets")
 	beego.Run()
 	//address := getbitcion.GetNewAddress("y",getbitcion.LEGACY)
 	//fmt.Println("新生成的地址:",address)

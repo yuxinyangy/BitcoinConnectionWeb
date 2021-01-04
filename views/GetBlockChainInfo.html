@@ -2,7 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>GetBlockChainInfo</title>
+    <link rel="stylesheet" type="text/css" href="./css/right.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/waifu.css"/>
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
 <h2>区块链名称:{{.BlockChainInfo.Chain}}</h2>
@@ -15,5 +18,16 @@
 <h2>活跃的链上的总工作量:{{.BlockChainInfo.Chainwork}}</h2>
 <h2>区块是否处于修剪中:{{.BlockChainInfo.Pruned}}</h2>
 <h2>有效的最高的区块:{{.BlockChainInfo.Pruneheight}}</h2>
+<div class="waifu">
+    <div class="waifu-tips"></div>
+    <canvas id="live2d" width="280" height="250" class="live2d"></canvas>
+    <div class="waifu-tool">
+        <span class="fui-user"></span>
+    </div>
+</div>
+
+<script src="./assets/waifu-tips.js"></script>
+<script src="./assets/live2d.js"></script>
+<script type="text/javascript">initModel("assets/")</script>
 </body>
 </html>

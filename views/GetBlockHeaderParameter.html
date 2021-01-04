@@ -2,12 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>GetBlockHeaderParameter</title>
+    <link rel="stylesheet" type="text/css" href="./css/right.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/waifu.css"/>
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
-<form method="post" action="/hash_blockHeader">
-    区块的hash:<input type="text" name="hash"/>
-    <input type="submit" value="查询" />
+<form method="post" action="/hash_blockHeader" >
+    <font>区块的hash:</font><input type="text" name="hash"/>
+    <input type="submit" value="查询" class="button"/>
 </form>
+<div class="waifu">
+    <div class="waifu-tips"></div>
+    <canvas id="live2d" width="280" height="250" class="live2d"></canvas>
+    <div class="waifu-tool">
+        <span class="fui-user"></span>
+    </div>
+</div>
+
+<script src="./assets/waifu-tips.js"></script>
+<script src="./assets/live2d.js"></script>
+<script type="text/javascript">initModel("assets/")</script>
 </body>
 </html>
